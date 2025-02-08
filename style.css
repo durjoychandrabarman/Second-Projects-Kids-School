@@ -44,7 +44,6 @@ body{
 
 /* heder style */
 header{
-    /* width: 80%; */
     background-color: white;
     max-width: 1160px;
     margin: 0 auto;
@@ -135,8 +134,7 @@ nav li{
 main{
     max-width: 1160px;
     margin: 0 auto;
-    background-image: url('images/bg.png')
-    
+    background-image: url('images/bg.png')   
 }
 
 .standard-cardbox{
@@ -221,8 +219,6 @@ main{
 }
 .stories-1 > div {
     background-color: white;
-    /* padding: 50px; */
-    
 }
 .stories-1-child{
     padding: 50px 56px 34px 40px;
@@ -385,14 +381,31 @@ footer li a {
 }
 /* device responsive */
 @media screen and (max-width:576px) {
+    header{
+        margin: 0px 0px 60px 0px;
+    }
+    main{
+        margin: 0px 14px 0px 14px;
+    }
+    .footer{
+        padding: 60px 14px;
+    }
     .banner-section{
         flex-direction: column-reverse;
         text-align: center;
-        margin: 8px 15px 0px 15px;
+        margin: 8px 14px 0px 14px;
         gap: 20px ;        
     }
-    .standard-cardbox , .stories-box {
+    .stories-box {
         flex-direction: column;
+    }
+    .standard-cardbox {
+        flex-direction: column;
+        margin: 20px 0px 80px 0px;
+        gap: 12px;
+    }
+    .standard-card {
+        margin: 0px
     }
     .stories-2-container{
         grid-template-columns: repeat(2 , 1fr);
@@ -417,10 +430,10 @@ footer li a {
         display: none;
     }
     .container{
-    /* margin-left: 10px; */
         padding: 10px;
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
     .footer-middle ,.footer-right{
         margin-left: 0;
